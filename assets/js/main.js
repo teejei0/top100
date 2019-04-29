@@ -1,38 +1,5 @@
 $(document).ready( function() {
 
-// -------------- Main Menu Jquery
-
-$(".navbar-nav li").each( function() {
-
-  $(this).has("ul").append("<i class='fa fa-caret-down menu-caret'></i>").addClass("has-sub");
-
-});
-
-$(window).on("resize", function () {
-
-  if ( $(window).width() >= 1200 ) {
-
-    $(".navbar-nav li:has(ul)").removeClass("open collapsible");
-    $(".dropdown-menu").removeAttr( 'style' );
-
-  }
-
-}).resize();
-
-$( ".navbar-nav li.has-sub > .fa-caret-down" ).on( "click", function() {
-
-  if ( $(window).width() <= 1199 ) {
-
-    $(this).parent().toggleClass("open collapsible");
-
-  }
-
-});
-
-// -------------- Placeholder Jquery
-
-$('input, textarea').placeholder();
-
 // -------------- Reject IE Jquery
 
 $.reject({
