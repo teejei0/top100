@@ -1,0 +1,13 @@
+.acf-map {
+	width: 100%;
+	height: 300px;
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+
+.acf-map {
+	height: 200px;
+}
+
+}
